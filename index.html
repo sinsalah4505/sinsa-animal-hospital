@@ -5,11 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>신사동물병원 - 노령견 심장전문, 신부전, 수술 잘하는 강남 동물병원</title>
-    
-    <meta name="description" content="강남구 논현동 위치. 노령견 심장전문 동물병원으로 신부전 관리, 슬개골 탈구 등 수술 잘하는 곳입니다. 20년 경력의 진료 잘보는 수의사가 정성을 다해 치료합니다.">
-    
+    <meta name="description" content="강남구 논현동 위치. 노령견 심장전문 동물병원으로 신부전 관리, 슬개골 탈구 등 수술 잘하는 곳입니다. 25년 경력의 진료 잘보는 수의사가 정성을 다해 치료합니다.">
     <meta name="keywords" content="신사동물병원, 노령견전문, 심장전문동물병원, 신부전관리, 수술잘하는동물병원, 진료잘보는동물병원, 강남동물병원, 논현동동물병원, 슬개골탈구수술">
-    
     <meta name="author" content="신사동물병원">
     <link rel="canonical" href="https://www.sinsa-ah.com">
 
@@ -26,7 +23,7 @@
       "name": "신사동물병원",
       "alternateName": ["구 24시신사동물병원", "강남 심장전문동물병원"],
       "image": "logo.jpg",
-      "description": "강남구 논현동에 위치한 수술 잘하는 동물병원. 노령견 심장병, 신부전 관리 특화. 20년 경력 전문의 진료.",
+      "description": "강남구 논현동에 위치한 수술 잘하는 동물병원. 노령견 심장병, 신부전 관리 특화. 25년 경력 전문의 진료.",
       "medicalSpecialty": ["VeterinaryHeart", "VeterinarySurgery", "GeriatricVeterinary"],
       "address": {
         "@type": "PostalAddress",
@@ -63,6 +60,7 @@
         /* --- [기본 스타일 초기화] --- */
         :root {
             --primary-color: #d93025;
+            --kakao-color: #FEE500; 
             --text-dark: #333;
             --bg-light: #f9f9f9;
         }
@@ -75,14 +73,9 @@
         a { text-decoration: none; color: inherit; }
         img { display: block; max-width: 100%; height: auto; margin: 0 auto; }
 
-        /* [SEO용 숨김 텍스트 클래스] */
         .sr-only {
-            position: absolute;
-            width: 1px; height: 1px;
-            padding: 0; margin: -1px;
-            overflow: hidden;
-            clip: rect(0,0,0,0);
-            border: 0;
+            position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+            overflow: hidden; clip: rect(0,0,0,0); border: 0;
         }
 
         /* --- [레이아웃: 1000px 최적화] --- */
@@ -116,21 +109,19 @@
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
         .nav-inner { 
-            max-width: 1000px; 
-            margin: 0 auto; padding: 0 20px;
+            max-width: 1000px; margin: 0 auto; padding: 0 20px;
             display: flex; justify-content: space-between; align-items: center; height: 70px;
         }
         .logo-img { max-height: 45px; width: auto; }
-        
         .menu { display: flex; gap: 20px; }
         .menu a { font-weight: 500; font-size: 0.95rem; transition: color 0.3s; white-space: nowrap; }
         .menu a:hover { color: var(--primary-color); }
 
-        /* --- [메인 슬라이더 (높이 500px로 확장)] --- */
+        /* --- [메인 슬라이더 (PC: 500px)] --- */
         .hero-slider {
             position: relative; 
             width: 100%; 
-            height: 500px; /* 요청하신대로 높이 확장 */
+            height: 500px; 
             background-color: #eee; overflow: hidden;
         }
         .slide {
@@ -154,6 +145,7 @@
         .content-img-wrap { text-align: center; margin-top: 30px; }
         .content-img-wrap img { 
             width: 100%; 
+            max-width: 850px; 
             border-radius: 10px; 
             box-shadow: 0 5px 20px rgba(0,0,0,0.08); 
         }
@@ -180,20 +172,22 @@
             width: 100%; height: auto; border-radius: 10px; border: 1px solid #eee;
         }
         
-        /* 전화 걸기 버튼 */
-        .call-btn {
+        /* [버튼 스타일 공통] */
+        .btn-common {
             display: block;
-            margin-top: 20px;
-            background-color: var(--primary-color);
-            color: white;
+            margin-top: 15px;
             font-size: 1.1rem;
             font-weight: bold;
             padding: 15px 0;
             border-radius: 8px;
-            transition: background 0.3s;
+            transition: opacity 0.3s;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-decoration: none;
         }
-        .call-btn:hover { background-color: #b92b20; color: white; }
+        .btn-common:hover { opacity: 0.9; }
+
+        .call-btn { background-color: var(--primary-color); color: white; }
+        .kakao-btn { background-color: var(--kakao-color); color: #191919; }
         
         .map-frame {
             width: 100%; height: 350px; border-radius: 10px; border: 1px solid #eee;
@@ -202,7 +196,6 @@
             margin-top: 20px; font-size: 1.05rem; color: #555; line-height: 1.6;
         }
 
-        /* --- [푸터] --- */
         footer {
             background: #333; color: #aaa; padding: 40px 0; text-align: center; font-size: 0.9rem;
         }
@@ -213,8 +206,9 @@
             .nav-inner { justify-content: center; }
             section { padding: 40px 0; }
             .section-header h2 { font-size: 1.6rem; }
-            /* 모바일에서는 너무 높으면 부담스러우니 적당히 조절 (280px) */
-            .hero-slider { height: 280px; } 
+            
+            .hero-slider { height: 55vw; min-height: 200px; } 
+            
             .location-grid { grid-template-columns: 1fr; gap: 20px; } 
             .location-card { padding: 25px; }
             .map-frame { height: 250px; } 
@@ -252,14 +246,14 @@
         <div class="container">
             <div class="section-header">
                 <h2>의료진 소개</h2>
-                <p>진료 잘보는 20년 경력 전문 수의사</p>
+                <p>진료 잘보는 25년 경력 전문 수의사</p>
             </div>
             <div class="content-img-wrap">
-                <img src="sub1_1.jpg" alt="신사동물병원 정희식, 윤승훈 원장. 노령견 심장전문, 신부전, 외과 수술 전문 의료진">
+                <img src="sub1_1.jpg" alt="신사동물병원 정희식, 윤승훈 원장. 25년 경력의 전문 수의사. 중증 질환, 노령동물 심장질환 및 정형외과 전문.">
             </div>
             <div class="sr-only">
                 신사동물병원은 노령견 심장전문 동물병원입니다. 신부전 관리 및 슬개골 탈구 등 외과 수술 잘하는 동물병원으로 유명합니다.
-                20년 경력의 의료진이 과잉진료 없이 진료 잘보는 곳으로 신뢰를 쌓아왔습니다.
+                25년 경력의 의료진이 과잉진료 없이 진료 잘보는 곳으로 신뢰를 쌓아왔습니다.
             </div>
         </div>
     </section>
@@ -277,15 +271,10 @@
         <div class="container">
             <div class="section-header">
                 <h2>주요 진료 과목</h2>
-                <p>심장전문, 신부전, 수술 특화 진료</p>
+                <p>노령견 진료, 심장전문, 신부전, 수술 특화 진료</p>
             </div>
             <div class="content-img-wrap">
-                <img src="sub2_2.jpg" alt="진료과목: 노령견 심장전문, 신부전 내과, 슬개골 및 고관절 수술 잘하는 정형외과, 안과, 피부과">
-            </div>
-            <div class="sr-only">
-                심장전문동물병원으로서 노령견의 심장병을 전문적으로 관리합니다.
-                만성 신부전(CKD) 관리 및 투석 상담.
-                정형외과 수술 잘하는 병원: 슬개골 탈구, 십자인대 파열, 골절 수술.
+                <img src="sub2_2.jpg" alt="진료과목: 노령견 심장전문, 신부전 내과, 슬개골 및 고관절 수술 잘하는 정형외과">
             </div>
         </div>
     </section>
@@ -294,7 +283,7 @@
         <div class="container">
             <div class="section-header"><h2>건강검진 프로그램</h2></div>
             <div class="content-img-wrap">
-                <img src="sub2_3.jpg" alt="노령견 정밀 건강검진, 심장 및 신부전 조기 진단 프로그램">
+                <img src="sub2_3.jpg" alt="노령견 정밀 건강검진">
             </div>
         </div>
     </section>
@@ -306,7 +295,7 @@
                 <p>전문 스타일리스트의 맞춤 케어</p>
             </div>
             <div class="content-img-wrap">
-                <img src="sub4_1.jpg" alt="강남 논현동 애견미용 잘하는 곳, 가위컷 전문">
+                <img src="sub4_1.jpg" alt="강남 논현동 애견미용 잘하는 곳">
             </div>
         </div>
     </section>
@@ -347,11 +336,17 @@
                     <h3><i class="far fa-clock"></i> 진료 시간 안내</h3>
                     <div class="map-container">
                         <img src="sub2_1.jpg" alt="진료시간 안내" class="map-img">
-                        <a href="tel:025494505" class="call-btn">
+                        
+                        <a href="tel:025494505" class="call-btn btn-common">
                             <i class="fas fa-phone-alt"></i> 전화 걸기 (02-549-4505)
+                        </a>
+                        
+                        <a href="https://pf.kakao.com/_Exxxxx" target="_blank" class="kakao-btn btn-common">
+                            <i class="fas fa-comment"></i> 카카오톡 상담
                         </a>
                     </div>
                 </div>
+                
                 <div class="location-card">
                     <h3><i class="fas fa-map-marked-alt"></i> 위치 안내</h3>
                     <div class="map-container">
