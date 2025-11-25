@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>신사동물병원 - 노령견 심장전문, 신부전, 수술 잘하는 강남 동물병원</title>
-    <meta name="description" content="강남구 논현동 위치. 노령견 심장전문 동물병원으로 신부전 관리, 슬개골 탈구 등 수술 잘하는 곳입니다. 25년 경력의 진료 잘보는 수의사가 정성을 다해 치료합니다.">
-    <meta name="keywords" content="신사동물병원, 노령견전문, 심장전문동물병원, 신부전관리, 수술잘하는동물병원, 진료잘보는동물병원, 강남동물병원, 논현동동물병원, 슬개골탈구수술">
+    <title>신사동물병원 - 노령견 심장전문, 신부전 집중케어, 정형외과 전문 강남 동물병원</title>
+    
+    <meta name="description" content="서울 강남구 논현동 위치. 노령견 심장질환 전문, 신부전 집중관리, 정형외과 수술 특화. 25년 임상경험의 전문 의료진이 정성껏 치료하는 스마트 동물병원입니다.">
+    
+    <meta name="keywords" content="신사동물병원, 스마트동물병원, 노령견전문, 심장전문동물병원, 신부전집중케어, 정형외과전문동물병원, 슬개골탈구수술, 강남동물병원, 논현동동물병원, 25년경력수의사">
     <meta name="author" content="신사동물병원">
     <link rel="canonical" href="https://www.sinsa-ah.com">
 
     <meta property="og:type" content="website">
-    <meta property="og:title" content="신사동물병원 - 심장전문, 수술 잘하는 동물병원">
-    <meta property="og:description" content="노령견 심장질환, 신부전 집중 관리. 과잉진료 없는 진료 잘보는 병원.">
-    <meta property="og:image" content="main_visual1.jpg">
-    <meta property="og:url" content="https://www.sinsa-ah.com">
+    <meta property="og:title" content="신사동물병원 - 25년 경력, 반려동물 평생 주치의">
+    <meta property="og:description" content="노령견 심장/신장 질환 집중 관리, 정형외과 수술 전문. 과잉진료 없는 정직한 병원.">
+    <meta property="og:image" content="images/main_visual1.jpg"> <meta property="og:url" content="https://www.sinsa-ah.com">
 
     <script type="application/ld+json">
     {
@@ -22,8 +23,8 @@
       "@type": "VeterinaryCare",
       "name": "신사동물병원",
       "alternateName": ["구 24시신사동물병원", "강남 심장전문동물병원"],
-      "image": "logo.jpg",
-      "description": "강남구 논현동에 위치한 수술 잘하는 동물병원. 노령견 심장병, 신부전 관리 특화. 25년 경력 전문의 진료.",
+      "image": "images/logo.jpg",
+      "description": "강남구 논현동에 위치한 정형외과 및 노령견 전문 동물병원. 25년 임상경험을 바탕으로 한 심장병, 신부전 집중 치료.",
       "medicalSpecialty": ["VeterinaryHeart", "VeterinarySurgery", "GeriatricVeterinary"],
       "address": {
         "@type": "PostalAddress",
@@ -57,10 +58,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
-        /* --- [기본 스타일 초기화] --- */
+        /* --- [기본 스타일] --- */
         :root {
             --primary-color: #d93025;
             --kakao-color: #FEE500; 
+            --call-color: #007bff;
             --text-dark: #333;
             --bg-light: #f9f9f9;
         }
@@ -78,30 +80,23 @@
             overflow: hidden; clip: rect(0,0,0,0); border: 0;
         }
 
-        /* --- [레이아웃: 1000px 최적화] --- */
+        /* --- [레이아웃: 1000px] --- */
         .container { 
-            max-width: 1000px; 
-            margin: 0 auto; 
-            padding: 0 20px; 
+            max-width: 1000px; margin: 0 auto; padding: 0 20px; 
         }
         section { 
-            padding: 70px 0; 
-            border-bottom: 1px solid #eee; 
+            padding: 70px 0; border-bottom: 1px solid #eee; 
         }
         
         /* 섹션 헤더 */
         .section-header { text-align: center; margin-bottom: 40px; }
         .section-header h2 { 
-            font-size: 2rem; 
-            font-weight: 700; 
-            margin-bottom: 15px; 
-            display: inline-block; 
-            border-bottom: 3px solid var(--primary-color); 
-            padding-bottom: 5px; 
+            font-size: 2rem; font-weight: 700; margin-bottom: 15px; 
+            display: inline-block; border-bottom: 3px solid var(--primary-color); padding-bottom: 5px; 
         }
         .section-header p { color: #666; font-size: 1.1rem; word-break: keep-all; }
 
-        /* --- [헤더 & 네비게이션] --- */
+        /* --- [헤더] --- */
         header {
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(5px);
@@ -117,101 +112,107 @@
         .menu a { font-weight: 500; font-size: 0.95rem; transition: color 0.3s; white-space: nowrap; }
         .menu a:hover { color: var(--primary-color); }
 
-        /* --- [메인 슬라이더 (PC: 500px)] --- */
+        /* --- [슬라이더] --- */
         .hero-slider {
-            position: relative; 
-            width: 100%; 
-            height: 500px; 
-            background-color: #eee; overflow: hidden;
+            position: relative; width: 100%; height: 500px; background-color: #eee; overflow: hidden;
         }
         .slide {
             position: absolute; top: 0; left: 0; width: 100%; height: 100%;
             opacity: 0; transition: opacity 1.2s ease-in-out;
         }
         .slide.active { opacity: 1; z-index: 1; }
+        .slide img { width: 100%; height: 100%; object-fit: cover; object-position: center center; }
         
-        .slide img { 
-            width: 100%; height: 100%; 
-            object-fit: cover; 
-            object-position: center center;
-        }
-
-        /* [이미지 위치 미세 조정] */
         .hero-slider .slide:nth-child(2) img,
         .hero-slider .slide:nth-child(3) img { object-position: center 30% !important; }
         .hero-slider .slide:nth-child(5) img { object-position: center 70% !important; }
 
-        /* --- [컨텐츠 이미지 래퍼] --- */
+        /* --- [이미지 스타일] --- */
         .content-img-wrap { text-align: center; margin-top: 30px; }
         .content-img-wrap img { 
-            width: 100%; 
-            max-width: 850px; 
-            border-radius: 10px; 
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08); 
+            width: 100%; max-width: 850px; 
+            border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); 
         }
 
-        /* --- [오시는 길 섹션] --- */
-        .location-grid { 
-            display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: stretch; 
+        /* --- [신뢰도 배지] --- */
+        .trust-badges {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-top: 40px;
         }
+        .badge-item {
+            text-align: center;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            border: 1px solid #eee;
+            transition: transform 0.3s;
+        }
+        .badge-item:hover { transform: translateY(-5px); }
+        .badge-item i { font-size: 2rem; color: var(--primary-color); margin-bottom: 10px; }
+        .badge-item h3 { font-size: 1rem; font-weight: bold; margin-bottom: 5px; color: #333; }
+        .badge-item p { font-size: 0.85rem; color: #666; margin: 0; }
+
+        /* --- [특별함 강조 박스] --- */
+        .specialty-features {
+            background: #f0f4f8;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 30px;
+            max-width: 850px;
+            margin-left: auto; margin-right: auto;
+        }
+        .specialty-features h3 { text-align: center; margin-bottom: 20px; font-size: 1.3rem; }
+        .specialty-features ul { list-style: none; padding: 0; }
+        .specialty-features li { 
+            margin-bottom: 10px; font-size: 1rem; color: #444; 
+            padding-left: 20px; position: relative;
+        }
+        .specialty-features li:before {
+            content: '✔'; position: absolute; left: 0; color: var(--primary-color); font-weight: bold;
+        }
+
+        /* --- [오시는 길] --- */
+        .location-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: stretch; }
         .location-card {
             background: #fff; padding: 35px; border-radius: 15px; 
             text-align: center; border: 1px solid #eee; box-shadow: 0 5px 15px rgba(0,0,0,0.05);
             display: flex; flex-direction: column;
         }
-        .location-card h3 { 
-            margin-bottom: 20px; font-size: 1.3rem; color: #444; 
-            display: flex; align-items: center; justify-content: center; gap: 10px;
-        }
+        .location-card h3 { margin-bottom: 20px; font-size: 1.3rem; color: #444; display: flex; align-items: center; justify-content: center; gap: 10px; }
         .location-card h3 i { color: var(--primary-color); }
         
-        .map-container {
-            flex-grow: 1; display: flex; flex-direction: column; justify-content: center;
-        }
-        .map-img {
-            width: 100%; height: auto; border-radius: 10px; border: 1px solid #eee;
-        }
-        
-        /* [버튼 스타일 공통] */
+        .map-container { flex-grow: 1; display: flex; flex-direction: column; justify-content: center; }
+        .map-img { width: 100%; height: auto; border-radius: 10px; border: 1px solid #eee; }
+        .map-frame { width: 100%; height: 350px; border-radius: 10px; border: 1px solid #eee; }
+        .address-text { margin-top: 20px; font-size: 1.05rem; color: #555; line-height: 1.6; }
+
+        /* 버튼 스타일 */
         .btn-common {
-            display: block;
-            margin-top: 15px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            padding: 15px 0;
-            border-radius: 8px;
-            transition: opacity 0.3s;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            text-decoration: none;
+            display: block; width: 100%; margin-top: 8px; font-size: 1.1rem; font-weight: bold;
+            padding: 15px 0; border-radius: 8px; transition: background-color 0.3s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-decoration: none; color: white;
         }
-        .btn-common:hover { opacity: 0.9; }
-
-        .call-btn { background-color: var(--primary-color); color: white; }
+        .call-btn { background-color: var(--call-color); }
+        .call-btn:hover { background-color: #0056b3; }
         .kakao-btn { background-color: var(--kakao-color); color: #191919; }
-        
-        .map-frame {
-            width: 100%; height: 350px; border-radius: 10px; border: 1px solid #eee;
-        }
-        .address-text {
-            margin-top: 20px; font-size: 1.05rem; color: #555; line-height: 1.6;
-        }
+        .kakao-btn:hover { background-color: #e5ce00; }
 
-        footer {
-            background: #333; color: #aaa; padding: 40px 0; text-align: center; font-size: 0.9rem;
-        }
+        footer { background: #333; color: #aaa; padding: 40px 0; text-align: center; font-size: 0.9rem; }
 
-        /* --- [모바일 반응형 최적화] --- */
+        /* --- [모바일] --- */
         @media (max-width: 768px) {
             .menu { display: none; }
             .nav-inner { justify-content: center; }
             section { padding: 40px 0; }
             .section-header h2 { font-size: 1.6rem; }
-            
             .hero-slider { height: 55vw; min-height: 200px; } 
-            
             .location-grid { grid-template-columns: 1fr; gap: 20px; } 
             .location-card { padding: 25px; }
-            .map-frame { height: 250px; } 
+            .map-frame { height: 250px; }
+            .trust-badges { grid-template-columns: repeat(2, 1fr); }
         }
     </style>
 </head>
@@ -220,7 +221,7 @@
     <header>
         <div class="nav-inner">
             <a href="#" class="logo">
-                <img src="logo.jpg" alt="신사동물병원 로고" class="logo-img">
+                <img src="images/logo.jpg" alt="신사동물병원 로고" class="logo-img">
             </a>
             <nav class="menu">
                 <a href="#intro">소개</a>
@@ -235,25 +236,51 @@
     </header>
 
     <div class="hero-slider">
-        <div class="slide active"><img src="main_visual1.jpg" alt="진료 잘보는 신사동물병원 전경 및 의료진"></div>
-        <div class="slide"><img src="main_visual2.jpg" alt="노령견 및 심장질환 전문 진료"></div>
-        <div class="slide"><img src="main_visual3.jpg" alt="수술 잘하는 동물병원 최신 수술 장비"></div>
-        <div class="slide"><img src="main_visual4.jpg" alt="신부전 관리 및 편안한 입원 호텔"></div>
-        <div class="slide"><img src="main_visual5.jpg" alt="강남구 논현동 동물병원 야경"></div>
+        <div class="slide active"><img src="images/main_visual1.jpg" alt="신사동물병원 전경 및 25년 경력 의료진"></div>
+        <div class="slide"><img src="images/main_visual2.jpg" alt="노령견 심장질환 및 신부전 전문 진료"></div>
+        <div class="slide"><img src="images/main_visual3.jpg" alt="최신 의료장비를 갖춘 신사동물병원 수술실"></div>
+        <div class="slide"><img src="images/main_visual4.jpg" alt="편안한 대기 공간과 호텔"></div>
+        <div class="slide"><img src="images/main_visual5.jpg" alt="강남구 논현동 동물병원 야경"></div>
     </div>
 
     <section id="intro">
         <div class="container">
             <div class="section-header">
                 <h2>의료진 소개</h2>
-                <p>진료 잘보는 25년 경력 전문 수의사</p>
+                <p>25년 축적된 임상경험, 믿을 수 있는 전문 의료진</p>
             </div>
             <div class="content-img-wrap">
-                <img src="sub1_1.jpg" alt="신사동물병원 정희식, 윤승훈 원장. 25년 경력의 전문 수의사. 중증 질환, 노령동물 심장질환 및 정형외과 전문.">
+                <img src="images/sub1_1.jpg" alt="신사동물병원 정희식, 윤승훈 원장. 25년 경력의 전문 수의사. 심장, 신부전, 정형외과 전문.">
             </div>
+            
+            <div class="trust-badges">
+                <div class="badge-item">
+                    <i class="fas fa-award"></i>
+                    <h3>25년 임상경험</h3>
+                    <p>2000년 개원 노하우</p>
+                </div>
+                <div class="badge-item">
+                    <i class="fas fa-heart"></i>
+                    <h3>심장질환 특화</h3>
+                    <p>노령견 집중 케어</p>
+                </div>
+                <div class="badge-item">
+                    <i class="fas fa-bone"></i>
+                    <h3>정형외과 전문</h3>
+                    <p>슬개골·고관절 수술</p>
+                </div>
+                <div class="badge-item">
+                    <i class="fas fa-user-md"></i>
+                    <h3>1:1 맞춤 진료</h3>
+                    <p>투명한 진료 시스템</p>
+                </div>
+            </div>
+
             <div class="sr-only">
-                신사동물병원은 노령견 심장전문 동물병원입니다. 신부전 관리 및 슬개골 탈구 등 외과 수술 잘하는 동물병원으로 유명합니다.
-                25년 경력의 의료진이 과잉진료 없이 진료 잘보는 곳으로 신뢰를 쌓아왔습니다.
+                신사동물병원은 2000년 개원 이래 노령견 심장질환 치료에 특화된 전문 동물병원입니다. 
+                첨단 장비를 활용한 <strong>스마트 동물병원</strong> 시스템으로 신부전 집중 관리 프로그램과 슬개골 탈구 등 
+                정형외과 수술 분야에서 높은 성공률을 보이고 있습니다. 
+                25년간 축적된 임상 데이터와 경험을 바탕으로 정확한 진단과 최적의 치료를 제공합니다.
             </div>
         </div>
     </section>
@@ -262,7 +289,7 @@
         <div class="container">
             <div class="section-header"><h2>병원 연혁</h2></div>
             <div class="content-img-wrap">
-                <img src="sub1-2.jpg" alt="2000년 개원부터 수술 잘하는 동물병원으로 성장해온 연혁">
+                <img src="images/sub1-2.jpg" alt="2000년 개원부터 현재까지 신사동물병원의 성장 과정">
             </div>
         </div>
     </section>
@@ -270,11 +297,21 @@
     <section id="service">
         <div class="container">
             <div class="section-header">
-                <h2>주요 진료 과목</h2>
+                <h2>전문 진료 분야</h2>
                 <p>노령견 진료, 심장전문, 신부전, 수술 특화 진료</p>
             </div>
             <div class="content-img-wrap">
-                <img src="sub2_2.jpg" alt="진료과목: 노령견 심장전문, 신부전 내과, 슬개골 및 고관절 수술 잘하는 정형외과">
+                <img src="images/sub2_2.jpg" alt="진료과목: 노령견 심장전문, 신부전 내과, 슬개골 및 고관절 수술 잘하는 정형외과">
+            </div>
+
+            <div class="specialty-features">
+                <h3>우리 병원이 특별한 이유</h3>
+                <ul>
+                    <li><strong>풍부한 임상 케이스:</strong> 25년간 축적된 다양한 치료 경험과 데이터</li>
+                    <li><strong>정형외과 전문 수술:</strong> 슬개골 탈구, 고관절 수술 등 고난이도 수술 집도</li>
+                    <li><strong>노령견 집중 관리:</strong> 심장병 및 만성 신부전 환견을 위한 특화 프로그램</li>
+                    <li><strong>투명한 진료 철학:</strong> 보호자와 소통하며 꼭 필요한 치료만 권장</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -283,7 +320,7 @@
         <div class="container">
             <div class="section-header"><h2>건강검진 프로그램</h2></div>
             <div class="content-img-wrap">
-                <img src="sub2_3.jpg" alt="노령견 정밀 건강검진">
+                <img src="images/sub2_3.jpg" alt="생애주기별 맞춤 정밀 건강검진 프로그램">
             </div>
         </div>
     </section>
@@ -292,10 +329,10 @@
         <div class="container">
             <div class="section-header">
                 <h2>뷰티 & 그루밍</h2>
-                <p>전문 스타일리스트의 맞춤 케어</p>
+                <p>전문 스타일리스트의 세심한 케어</p>
             </div>
             <div class="content-img-wrap">
-                <img src="sub4_1.jpg" alt="강남 논현동 애견미용 잘하는 곳">
+                <img src="images/sub4_1.jpg" alt="강남 논현동 애견미용, 가위컷 전문 스타일링">
             </div>
         </div>
     </section>
@@ -304,10 +341,10 @@
         <div class="container">
             <div class="section-header">
                 <h2>호텔 서비스</h2>
-                <p>수술 후 회복 및 노령견 케어 호텔</p>
+                <p>수의사가 관리하는 안전한 휴식 공간</p>
             </div>
             <div class="content-img-wrap">
-                <img src="sub4_2.jpg" alt="수의사가 관리하는 안전한 강아지 호텔">
+                <img src="images/sub4_2.jpg" alt="쾌적하고 위생적인 반려동물 호텔 서비스">
             </div>
         </div>
     </section>
@@ -316,10 +353,10 @@
         <div class="container">
             <div class="section-header">
                 <h2>반려동물 용품</h2>
-                <p>신부전/심장병 처방식 사료 보유</p>
+                <p>처방식 사료 및 프리미엄 용품</p>
             </div>
             <div class="content-img-wrap">
-                <img src="sub4_3.jpg" alt="처방식 사료 및 프리미엄 용품 판매">
+                <img src="images/sub4_3.jpg" alt="신부전/심장병 처방식 사료 및 다양한 용품 구비">
             </div>
         </div>
     </section>
@@ -328,14 +365,14 @@
         <div class="container">
             <div class="section-header">
                 <h2>오시는 길 & 진료시간</h2>
-                <p>진료 잘보는 신사동물병원 위치 안내</p>
+                <p>강남구 논현동, 여러분의 반려동물 주치의</p>
             </div>
             
             <div class="location-grid">
                 <div class="location-card">
                     <h3><i class="far fa-clock"></i> 진료 시간 안내</h3>
                     <div class="map-container">
-                        <img src="sub2_1.jpg" alt="진료시간 안내" class="map-img">
+                        <img src="images/sub2_1.jpg" alt="진료시간 안내" class="map-img">
                         
                         <a href="tel:025494505" class="call-btn btn-common">
                             <i class="fas fa-phone-alt"></i> 전화 걸기 (02-549-4505)
